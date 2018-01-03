@@ -15,7 +15,7 @@ class Pokemon
 
   def self.find(id, db)
     details = db.execute("SELECT name, type, hp FROM pokemon WHERE id = ?",id)
-    Pokemon.new(id: id, name: details[0][0], type: details[0][1], hp:[0][2], db: db)
+    Pokemon.new(id: id, name: details[0][0], type: details[0][1], db: db)
   end
 
   def alter_hp(hp, db)
