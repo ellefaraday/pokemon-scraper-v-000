@@ -1,6 +1,6 @@
 require 'pry'
 class Pokemon
-  attr_accessor :db, :name, :type, :id
+  attr_accessor :db, :name, :type, :id, :hp
 
   @@counter = 1
 
