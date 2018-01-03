@@ -1,7 +1,7 @@
 class Pokemon
   attr_accessor :db, :name, :type, :id
 
-  @@counter = 0
+  @@counter = 1
 
   def initialize(id: 'id', name: 'name', type:'type', db: 'db')
     @id = id
